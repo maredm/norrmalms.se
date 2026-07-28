@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Norrmalms Ljudteknik</title>
+        <style>
+            /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+            @layer properties {
+                @supports ((-webkit-hyphens: none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+                    *,::backdrop,:after,:before {
+                        --tw-scale-x:1;
+                        --tw-scale-y: 1;
+                        --tw-scale-z: 1;
+                        --tw-leading: initial;
+                        --tw-font-weight: initial;
+                        --tw-shadow: 0 0 #0000;
+                        --tw-shadow-color: initial;
+                        --tw-shadow-alpha: 100%;
+                        --tw-inset-shadow: 0 0 #0000;
+                        --tw-inset-shadow-color: initial;
+                        --tw-inset-shadow-alpha: 100%;
+                        --tw-ring-color: initial;
+                        --tw-ring-shadow: 0 0 #0000;
+                        --tw-inset-ring-color: initial;
+                        --tw-inset-ring-shadow: 0 0 #0000;
+                        --tw-ring-inset: initial;
+                        --tw-ring-offset-width: 0px;
+                        --tw-ring-offset-color: #fff;
+                        --tw-ring-offset-shadow: 0 0 #0000;
+                        --tw-blur: initial;
+                        --tw-brightness: initial;
+                        --tw-contrast: initial;
+                        --tw-grayscale: initial;
+                        --tw-hue-rotate: initial;
+                        --tw-invert: initial;
+                        --tw-opacity: initial;
+                        --tw-saturate: initial;
+                        --tw-sepia: initial;
+                        --tw-drop-shadow: initial;
+                        --tw-drop-shadow-color: initial;
+                        --tw-drop-shadow-alpha: 100%;
+                        --tw-drop-shadow-size: initial
+                    }
+                }
+            }
+
+            @layer theme {
+                :host,:root {
+                    --font-sans: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                    --font-mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+                    --color-red-400: oklch(70.4% .191 22.216);
+                    --color-red-500: oklch(63.7% .237 25.331);
+                    --color-red-600: oklch(57.7% .245 27.325);
+                    --color-stone-100: oklch(97% .001 106.424);
+                    --color-stone-200: oklch(92.3% .003 48.717);
+                    --color-stone-700: oklch(37.4% .01 67.558);
+                    --color-stone-800: oklch(26.8% .007 34.298);
+                    --color-black: #000;
+                    --color-white: #fff;
+                    --spacing: .25rem;
+                    --container-4xl: 56rem;
+                    --text-xl: 1.25rem;
+                    --text-xl--line-height: 1.4;
+                    --text-3xl: 1.875rem;
+                    --text-3xl--line-height: 1.2;
+                    --text-4xl: 2.25rem;
+                    --text-4xl--line-height: 1.11111;
+                    --text-5xl: 3rem;
+                    --text-5xl--line-height: 1;
+                    --text-8xl: 6rem;
+                    --text-8xl--line-height: 1;
+                    --font-weight-light: 300;
+                    --font-weight-medium: 500;
+                    --leading-tight: 1.25;
+                    --animate-spin: spin 1s linear infinite;
+                    --default-transition-duration: .15s;
+                    --default-transition-timing-function: cubic-bezier(.4,0,.2,1);
+                    --default-font-family: var(--font-sans);
+                    --default-mono-font-family: var(--font-mono)
+                }
+            }
+
+            @layer base {
+                *,::backdrop,:after,:before {
+                    border: 0 solid;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0
+                }
+
+                ::file-selector-button {
+                    border: 0 solid;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0
+                }
+
+                :host,html {
+                    -webkit-text-size-adjust: 100%;
+                    font-family: var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");
+                    font-feature-settings: var(--default-font-feature-settings,normal);
+                    font-variation-settings: var(--default-font-variation-settings,normal);
+                    line-height: 1.5;
+                    -moz-tab-size: 4;
+                    -o-tab-size: 4;
+                    tab-size: 4;
+                    -webkit-tap-highlight-color: transparent
+                }
+
+                hr {
+                    border-top-width: 1px;
+                    color: inherit;
+                    height: 0
+                }
+
+                abbr: where([title]) {
+                    -webkit-text-decoration:underline dotted;
+                    text-decoration: underline dotted
+                }
+
+                h1,h2,h3,h4,h5,h6 {
+                    font-size: inherit;
+                    font-weight: inherit
+                }
+
+                a {
+                    color: inherit;
+                    -webkit-text-decoration: inherit;
+                    text-decoration: inherit
+                }
+
+                b,strong {
+                    font-weight: bolder
+                }
+
+                code,kbd,pre,samp {
+                    font-family: var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace);
+                    font-feature-settings: var(--default-mono-font-feature-settings,normal);
+                    font-size: 1em;
+                    font-variation-settings: var(--default-mono-font-variation-settings,normal)
+                }
+
+                small {
+                    font-size: 80%
+                }
+
+                sub,sup {
+                    font-size: 75%;
+                    line-height: 0;
+                    position: relative;
+                    vertical-align: baseline
+                }
+
+                sub {
+                    bottom: -.25em
+                }
+
+                sup {
+                    top: -.5em
+                }
+
+                table {
+                    border-collapse: collapse;
+                    border-color: inherit;
+                    text-indent: 0
+                }
+
+                :-moz-focusring {
+                    outline: auto
+                }
+
+                progress {
+                    vertical-align: baseline
+                }
+
+                summary {
+                    display: list-item
+                }
+
+                menu,ol,ul {
+                    list-style: none
+                }
+
+                audio,canvas,embed,iframe,img,object,svg,video {
+                    display: block;
+                    vertical-align: middle
+                }
+
+                img,video {
+                    height: auto;
+                    max-width: 100%
+                }
+
+                button,input,optgroup,select,textarea {
+                    background-color: #0000;
+                    border-radius: 0;
+                    color: inherit;
+                    font: inherit;
+                    font-feature-settings: inherit;
+                    font-variation-settings: inherit;
+                    letter-spacing: inherit;
+                    opacity: 1
+                }
+
+                ::file-selector-button {
+                    background-color: #0000;
+                    border-radius: 0;
+                    color: inherit;
+                    font: inherit;
+                    font-feature-settings: inherit;
+                    font-variation-settings: inherit;
+                    letter-spacing: inherit;
+                    opacity: 1
+                }
+
+                :where(select: is([multiple],[size])) optgroup {
+                    font-weight:bolder
+                }
+
+                :where(select: is([multiple],[size])) optgroup option {
+                    padding-inline-start:20px
+                }
+
+                ::file-selector-button {
+                    margin-inline-end:4px}
+
+                ::-moz-placeholder {
+                    opacity: 1
+                }
+
+                ::placeholder {
+                    opacity: 1
+                }
+
+                @supports (not (-webkit-appearance: -apple-pay-button)) or (contain-intrinsic-size:1px) {
+                    ::-moz-placeholder {
+                        color:currentColor
+                    }
+
+                    ::placeholder {
+                        color: currentColor
+                    }
+
+                    @supports (color: color-mix(in lab,red,red)) {
+                        ::-moz-placeholder {
+                            color:color-mix(in oklab,currentcolor 50%,transparent)
+                        }
+
+                        ::placeholder {
+                            color: color-mix(in oklab,currentcolor 50%,transparent)
+                        }
+                    }
+                }
+
+                textarea {
+                    resize: vertical
+                }
+
+                ::-webkit-search-decoration {
+                    -webkit-appearance: none
+                }
+
+                ::-webkit-date-and-time-value {
+                    min-height: 1lh;
+                    text-align: inherit
+                }
+
+                ::-webkit-datetime-edit {
+                    display: inline-flex
+                }
+
+                ::-webkit-datetime-edit-fields-wrapper {
+                    padding: 0
+                }
+
+                ::-webkit-datetime-edit,::-webkit-datetime-edit-year-field {
+                    padding-block:0}
+
+                ::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-month-field {
+                    padding-block:0}
+
+                ::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field {
+                    padding-block:0}
+
+                ::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-second-field {
+                    padding-block:0}
+
+                ::-webkit-datetime-edit-meridiem-field {
+                    padding-block:0}
+
+                :-moz-ui-invalid {
+                    box-shadow: none
+                }
+
+                button,input: where([type=button],[type=reset],[type=submit]) {
+                    -webkit-appearance:button;
+                    -moz-appearance: button;
+                    appearance: button
+                }
+
+                ::file-selector-button {
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button
+                }
+
+                ::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+                    height: auto
+                }
+
+                [hidden]: where(:not([hidden=until-found])) {
+                    display:none!important
+                }
+            }
+
+            @layer components;@layer utilities {
+                .sr-only {
+                    clip: rect(0,0,0,0);
+                    border-width: 0;
+                    height: 1px;
+                    margin: -1px;
+                    overflow: hidden;
+                    padding: 0;
+                    position: absolute;
+                    white-space: nowrap;
+                    width: 1px
+                }
+
+                .fixed {
+                    position: fixed
+                }
+
+                .right-0 {
+                    right: calc(var(--spacing)*0)
+                }
+
+                .-bottom-1\/2 {
+                    bottom: -50%
+                }
+
+                .left-0 {
+                    left: calc(var(--spacing)*0)
+                }
+
+                .z-10 {
+                    z-index: 10
+                }
+
+                .z-20 {
+                    z-index: 20
+                }
+
+                .container {
+                    width: 100%
+                }
+
+                @media (min-width: 40rem) {
+                    .container {
+                        max-width:40rem
+                    }
+                }
+
+                @media (min-width: 48rem) {
+                    .container {
+                        max-width:48rem
+                    }
+                }
+
+                @media (min-width: 64rem) {
+                    .container {
+                        max-width:64rem
+                    }
+                }
+
+                @media (min-width: 80rem) {
+                    .container {
+                        max-width:80rem
+                    }
+                }
+
+                @media (min-width: 96rem) {
+                    .container {
+                        max-width:96rem
+                    }
+                }
+
+                .mx-auto {
+                    margin-inline:auto}
+
+                .mt-8 {
+                    margin-top: calc(var(--spacing)*8)
+                }
+
+                .mr-1 {
+                    margin-right: calc(var(--spacing)*1)
+                }
+
+                .mr-1\.5 {
+                    margin-right: calc(var(--spacing)*1.5)
+                }
+
+                .mb-8 {
+                    margin-bottom: calc(var(--spacing)*8)
+                }
+
+                .mb-16 {
+                    margin-bottom: calc(var(--spacing)*16)
+                }
+
+                .flex {
+                    display: flex
+                }
+
+                .grid {
+                    display: grid
+                }
+
+                .inline-block {
+                    display: inline-block
+                }
+
+                .h-1\/2 {
+                    height: 50%
+                }
+
+                .h-12 {
+                    height: calc(var(--spacing)*12)
+                }
+
+                .h-full {
+                    height: 100%
+                }
+
+                .min-h-screen {
+                    min-height: 100vh
+                }
+
+                .w-2 {
+                    width: calc(var(--spacing)*2)
+                }
+
+                .w-12 {
+                    width: calc(var(--spacing)*12)
+                }
+
+                .w-48 {
+                    width: calc(var(--spacing)*48)
+                }
+
+                .w-60 {
+                    width: calc(var(--spacing)*60)
+                }
+
+                .w-full {
+                    width: 100%
+                }
+
+                .origin-top-left {
+                    transform-origin: 0 0
+                }
+
+                .scale-50 {
+                    --tw-scale-x: 50%;
+                    --tw-scale-y: 50%;
+                    --tw-scale-z: 50%;
+                    scale: var(--tw-scale-x)var(--tw-scale-y)
+                }
+
+                .rotate-133 {
+                    rotate: 133deg
+                }
+
+                .animate-spin {
+                    animation: var(--animate-spin)
+                }
+
+                .cursor-pointer {
+                    cursor: pointer
+                }
+
+                .resize {
+                    resize: both
+                }
+
+                .list-disc {
+                    list-style-type: disc
+                }
+
+                .place-content-center {
+                    place-content: center
+                }
+
+                .items-center {
+                    align-items: center
+                }
+
+                .justify-between {
+                    justify-content: space-between
+                }
+
+                .justify-center {
+                    justify-content: center
+                }
+
+                .overflow-clip {
+                    overflow: clip
+                }
+
+                .overflow-hidden {
+                    overflow: hidden
+                }
+
+                .border-stone-100 {
+                    border-color: var(--color-stone-100)
+                }
+
+                .bg-red-400 {
+                    background-color: var(--color-red-400)
+                }
+
+                .bg-stone-100 {
+                    background-color: var(--color-stone-100)
+                }
+
+                .bg-white {
+                    background-color: var(--color-white)
+                }
+
+                .fill-red-500 {
+                    fill: var(--color-red-500)
+                }
+
+                .p-0 {
+                    padding: calc(var(--spacing)*0)
+                }
+
+                .p-5 {
+                    padding: calc(var(--spacing)*5)
+                }
+
+                .p-8 {
+                    padding: calc(var(--spacing)*8)
+                }
+
+                .px-0 {
+                    padding-inline:calc(var(--spacing)*0)}
+
+                .px-4 {
+                    padding-inline: calc(var(--spacing)*4)
+                }
+
+                .px-8 {
+                    padding-inline:calc(var(--spacing)*8)}
+
+                .py-2 {
+                    padding-block: calc(var(--spacing)*2)
+                }
+
+                .py-6 {
+                    padding-block:calc(var(--spacing)*6)}
+
+                .py-8 {
+                    padding-block: calc(var(--spacing)*8)
+                }
+
+                .pl-5 {
+                    padding-left: calc(var(--spacing)*5)
+                }
+
+                .text-center {
+                    text-align: center
+                }
+
+                .align-middle {
+                    vertical-align: middle
+                }
+
+                .font-sans {
+                    font-family: var(--font-sans)
+                }
+
+                .text-5xl {
+                    font-size: var(--text-5xl);
+                    line-height: var(--tw-leading,var(--text-5xl--line-height))
+                }
+
+                .text-8xl {
+                    font-size: var(--text-8xl);
+                    line-height: var(--tw-leading,var(--text-8xl--line-height))
+                }
+
+                .text-xl {
+                    font-size: var(--text-xl);
+                    line-height: var(--tw-leading,var(--text-xl--line-height))
+                }
+
+                .leading-tight {
+                    --tw-leading: var(--leading-tight);
+                    line-height: var(--leading-tight)
+                }
+
+                .font-light {
+                    --tw-font-weight: var(--font-weight-light);
+                    font-weight: var(--font-weight-light)
+                }
+
+                .font-medium {
+                    --tw-font-weight: var(--font-weight-medium);
+                    font-weight: var(--font-weight-medium)
+                }
+
+                .whitespace-nowrap {
+                    white-space: nowrap
+                }
+
+                .text-black {
+                    color: var(--color-black)
+                }
+
+                .text-red-400 {
+                    color: var(--color-red-400)
+                }
+
+                .text-red-600 {
+                    color: var(--color-red-600)
+                }
+
+                .text-stone-100 {
+                    color: var(--color-stone-100)
+                }
+
+                .text-white {
+                    color: var(--color-white)
+                }
+
+                .underline {
+                    text-decoration-line: underline
+                }
+
+                .antialiased {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale
+                }
+
+                .shadow {
+                    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color,#0000001a),0 1px 2px -1px var(--tw-shadow-color,#0000001a);
+                    box-shadow: var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)
+                }
+
+                .blur {
+                    --tw-blur: blur(8px)
+                }
+
+                .blur,.filter {
+                    filter: var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)
+                }
+
+                .transition {
+                    transition-duration: var(--tw-duration,var(--default-transition-duration));
+                    transition-property: color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,visibility,content-visibility,overlay,pointer-events;
+                    transition-timing-function: var(--tw-ease,var(--default-transition-timing-function))
+                }
+
+                @media (min-width: 40rem) {
+                    .sm\:px-0 {
+                        padding-inline:calc(var(--spacing)*0)
+                    }
+
+                    .sm\:px-6 {
+                        padding-inline:calc(var(--spacing)*6)}
+
+                    .sm\: py-3 {
+                        padding-block:calc(var(--spacing)*3)
+                    }
+
+                    .sm\:text-4xl {
+                        font-size: var(--text-4xl);
+                        line-height: var(--tw-leading,var(--text-4xl--line-height))
+                    }
+
+                    .sm\:text-xl {
+                        font-size: var(--text-xl);
+                        line-height: var(--tw-leading,var(--text-xl--line-height))
+                    }
+                }
+
+                @media (min-width: 48rem) {
+                    .md\:h-auto {
+                        height:auto
+                    }
+
+                    .md\:w-auto {
+                        width: auto
+                    }
+
+                    .md\:scale-100 {
+                        --tw-scale-x: 100%;
+                        --tw-scale-y: 100%;
+                        --tw-scale-z: 100%;
+                        scale: var(--tw-scale-x)var(--tw-scale-y)
+                    }
+
+                    .md\:p-8 {
+                        padding: calc(var(--spacing)*8)
+                    }
+
+                    .md\:px-6 {
+                        padding-inline:calc(var(--spacing)*6)}
+                }
+
+                @media (min-width: 64rem) {
+                    .lg\:my-8 {
+                        margin-block:calc(var(--spacing)*8)
+                    }
+                }
+
+                @media (min-width: 80rem) {
+                    .xl\:p-10 {
+                        padding:calc(var(--spacing)*10)
+                    }
+                }
+
+                @media (prefers-color-scheme: dark) {
+                    .dark\:bg-black {
+                        background-color:var(--color-black)
+                    }
+
+                    .dark\:text-white {
+                        color: var(--color-white)
+                    }
+                }
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://use.typekit.net/af/41f2e0/00000000000000007756a8a5/31/l?subset_id=2&fvd=n4&v=3)format("woff2"),url(https://use.typekit.net/af/41f2e0/00000000000000007756a8a5/31/d?subset_id=2&fvd=n4&v=3)format("woff"),url(https://use.typekit.net/af/41f2e0/00000000000000007756a8a5/31/a?subset_id=2&fvd=n4&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://use.typekit.net/af/19fa6b/00000000000000007756f0ec/31/l?subset_id=2&fvd=n6&v=3)format("woff2"),url(https://use.typekit.net/af/19fa6b/00000000000000007756f0ec/31/d?subset_id=2&fvd=n6&v=3)format("woff"),url(https://use.typekit.net/af/19fa6b/00000000000000007756f0ec/31/a?subset_id=2&fvd=n6&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 300;
+                src: url(https://use.typekit.net/af/042e67/0000000000000000775664ca/31/l?subset_id=2&fvd=n3&v=3)format("woff2"),url(https://use.typekit.net/af/042e67/0000000000000000775664ca/31/d?subset_id=2&fvd=n3&v=3)format("woff"),url(https://use.typekit.net/af/042e67/0000000000000000775664ca/31/a?subset_id=2&fvd=n3&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic;
+                font-stretch: 100%;
+                font-style: italic;
+                font-weight: 700;
+                src: url(https://use.typekit.net/af/938c04/0000000000000000775664c5/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3)format("woff2"),url(https://use.typekit.net/af/938c04/0000000000000000775664c5/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3)format("woff"),url(https://use.typekit.net/af/938c04/0000000000000000775664c5/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic-condensed;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://use.typekit.net/af/7627ce/00000000000000007756f0e4/31/l?subset_id=2&fvd=n6&v=3)format("woff2"),url(https://use.typekit.net/af/7627ce/00000000000000007756f0e4/31/d?subset_id=2&fvd=n6&v=3)format("woff"),url(https://use.typekit.net/af/7627ce/00000000000000007756f0e4/31/a?subset_id=2&fvd=n6&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: tablet-gothic-condensed;
+                font-stretch: 100%;
+                font-style: italic;
+                font-weight: 600;
+                src: url(https://use.typekit.net/af/10b530/00000000000000007756f0e6/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3)format("woff2"),url(https://use.typekit.net/af/10b530/00000000000000007756f0e6/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3)format("woff"),url(https://use.typekit.net/af/10b530/00000000000000007756f0e6/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: neue-kabel;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 700;
+                src: url(https://use.typekit.net/af/b815f0/00000000000000007735baff/31/l?subset_id=2&fvd=n7&v=3)format("woff2"),url(https://use.typekit.net/af/b815f0/00000000000000007735baff/31/d?subset_id=2&fvd=n7&v=3)format("woff"),url(https://use.typekit.net/af/b815f0/00000000000000007735baff/31/a?subset_id=2&fvd=n7&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: neue-kabel;
+                font-stretch: 100%;
+                font-style: italic;
+                font-weight: 700;
+                src: url(https://use.typekit.net/af/f62aaa/00000000000000007735bafe/31/l?subset_id=2&fvd=i7&v=3)format("woff2"),url(https://use.typekit.net/af/f62aaa/00000000000000007735bafe/31/d?subset_id=2&fvd=i7&v=3)format("woff"),url(https://use.typekit.net/af/f62aaa/00000000000000007735bafe/31/a?subset_id=2&fvd=i7&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: neue-kabel;
+                font-stretch: 100%;
+                font-style: italic;
+                font-weight: 400;
+                src: url(https://use.typekit.net/af/630404/00000000000000007735bb13/31/l?subset_id=2&fvd=i4&v=3)format("woff2"),url(https://use.typekit.net/af/630404/00000000000000007735bb13/31/d?subset_id=2&fvd=i4&v=3)format("woff"),url(https://use.typekit.net/af/630404/00000000000000007735bb13/31/a?subset_id=2&fvd=i4&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: swap;
+                font-family: neue-kabel;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://use.typekit.net/af/515011/00000000000000007735bb1c/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3)format("woff2"),url(https://use.typekit.net/af/515011/00000000000000007735bb1c/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3)format("woff"),url(https://use.typekit.net/af/515011/00000000000000007735bb1c/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3)format("opentype")
+            }
+
+            @font-face {
+                font-display: auto;
+                font-family: neue-kabel;
+                font-stretch: 100%;
+                font-style: normal;
+                font-weight: 400;
+                src: url(https://use.typekit.net/af/d4c9bc/00000000000000007735bb22/31/l?subset_id=2&fvd=n4&v=3)format("woff2"),url(https://use.typekit.net/af/d4c9bc/00000000000000007735bb22/31/d?subset_id=2&fvd=n4&v=3)format("woff"),url(https://use.typekit.net/af/d4c9bc/00000000000000007735bb22/31/a?subset_id=2&fvd=n4&v=3)format("opentype")
+            }
+
+            .tk-tablet-gothic {
+                font-family: tablet-gothic,sans-serif
+            }
+
+            .tk-tablet-gothic-condensed {
+                font-family: tablet-gothic-condensed,sans-serif
+            }
+
+            .tk-neue-kabel {
+                font-family: neue-kabel,sans-serif
+            }
+
+            .container {
+                color: var(--color-stone-700,oklch(26.8% .007 34.298));
+                margin-inline:auto;max-width: var(--container-4xl,56rem)
+            }
+
+            .container.shadow {
+                --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color,#00000040);
+                box-shadow: var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);
+                --tw-shadow-color: oklch(92.3% .003 48.717)
+            }
+
+            @supports (color: color-mix(in lab,red,red)) {
+                .container.shadow {
+                    --tw-shadow-color:oklch(92.3% .003 48.717)
+                }
+
+                @supports (color: color-mix(in lab,red,red)) {
+                    .container.shadow {
+                        --tw-shadow-color:color-mix(in oklab,var(--color-stone-200,oklch(92.3% .003 48.717))var(--tw-shadow-alpha),transparent)
+                    }
+                }
+            }
+
+            body {
+                background-color: #f3f4f4;
+                color: var(--color-stone-800,oklch(26.8% .007 34.298));
+                font-family: var(--font-sans,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");
+                font-family: tablet-gothic,sans-serif;
+                font-weight: 200
+            }
+
+            .font-light {
+                font-weight: 300
+            }
+
+            .font-normal {
+                font-weight: 400
+            }
+
+            .font-semibold {
+                font-weight: 600
+            }
+
+            h2 {
+                font-size: var(--text-3xl,1.875rem);
+                line-height: var(--tw-leading,var(--text-3xl--line-height,1.2));
+                padding-bottom: calc(var(--spacing,.25rem)*6);
+                padding-top: calc(var(--spacing,.25rem)*8)
+            }
+
+            .text-kabel {
+                font-family: neue-kabel,sans-serif;
+                font-style: normal;
+                font-weight: 600
+            }
+
+            @property --tw-scale-x {
+                syntax: "*";
+                inherits: false;
+                initial-value: 1
+            }
+
+            @property --tw-scale-y {
+                syntax: "*";
+                inherits: false;
+                initial-value: 1
+            }
+
+            @property --tw-scale-z {
+                syntax: "*";
+                inherits: false;
+                initial-value: 1
+            }
+
+            @property --tw-leading {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-font-weight {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-shadow {
+                syntax: "*";
+                inherits: false;
+                initial-value: 0 0 #0000
+            }
+
+            @property --tw-shadow-color {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-shadow-alpha {
+                syntax: "<percentage>";
+                inherits: false;
+                initial-value: 100%
+            }
+
+            @property --tw-inset-shadow {
+                syntax: "*";
+                inherits: false;
+                initial-value: 0 0 #0000
+            }
+
+            @property --tw-inset-shadow-color {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-inset-shadow-alpha {
+                syntax: "<percentage>";
+                inherits: false;
+                initial-value: 100%
+            }
+
+            @property --tw-ring-color {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-ring-shadow {
+                syntax: "*";
+                inherits: false;
+                initial-value: 0 0 #0000
+            }
+
+            @property --tw-inset-ring-color {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-inset-ring-shadow {
+                syntax: "*";
+                inherits: false;
+                initial-value: 0 0 #0000
+            }
+
+            @property --tw-ring-inset {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-ring-offset-width {
+                syntax: "<length>";
+                inherits: false;
+                initial-value: 0
+            }
+
+            @property --tw-ring-offset-color {
+                syntax: "*";
+                inherits: false;
+                initial-value: #fff
+            }
+
+            @property --tw-ring-offset-shadow {
+                syntax: "*";
+                inherits: false;
+                initial-value: 0 0 #0000
+            }
+
+            @property --tw-blur {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-brightness {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-contrast {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-grayscale {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-hue-rotate {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-invert {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-opacity {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-saturate {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-sepia {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-drop-shadow {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-drop-shadow-color {
+                syntax: "*";
+                inherits: false
+            }
+
+            @property --tw-drop-shadow-alpha {
+                syntax: "<percentage>";
+                inherits: false;
+                initial-value: 100%
+            }
+
+            @property --tw-drop-shadow-size {
+                syntax: "*";
+                inherits: false
+            }
+
+            @keyframes spin {
+                to {
+                    transform: rotate(1turn)
+                }
+            }
+        </style>
+        <link rel="preload" href="https://use.typekit.net/af/41f2e0/00000000000000007756a8a5/31/l?subset_id=2&fvd=n4&v=3" crossorigin as="font" type="font/woff2">
+        <link rel="preload" href="https://use.typekit.net/af/515011/00000000000000007735bb1c/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3" crossorigin as="font" type="font/woff2">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="description" content="Norrmalms Ljudteknik erbjuder expertis inom ljudteknik för konserter och event. Vi är baserade i Stockholm och har många års erfarenhet inom branschen.">
+        <meta property="og:title" content="Norrmalms Ljudteknik">
+        <meta property="og:description" content="Norrmalms Ljudteknik erbjuder expertis inom ljudteknik för konserter och event. Vi är baserade i Stockholm och har många års erfarenhet inom branschen.">
+        <meta property="og:image" content="/images/ns10.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.norrmalms.se/">
+        <meta name="robots" content="index, follow">
+    </head>
+    <body>
+        <div class="xl:p-10 p-0 align-middle">
+            <div class="container mx-auto text-kabel">
+                <header class="flex justify-between">
+                    <div class="p-5 md:p-8 w-60 md:w-auto">
+                        <div class="scale-50 md:scale-100 origin-top-left h-12 md:h-auto">
+                            <a aria-current="page" href="/" class="router-link-active router-link-exact-active text-5xl whitespace-nowrap h-full w-full">
+                                <span class="text-white-600">Norrmalms</span>
+                                <div>
+                                    <div class="bg-red-400 inline-block mr-1.5 overflow-clip text-red-400">
+                                        <div class="text-stone-100 bg-stone-100 inline-block mr-1 w-2 rotate-133">O</div>
+                                        -
+                                    </div>
+                                    Ljudteknik
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="px-0 md:px-6 py-6 w-48"></nav>
+                </header>
+            </div>
+            <div class="container p-8 bg-white shadow">
+                <p>Norrmalms Ljudteknik erbjuder expertis inom ljudteknik för konserter och event. Vi är baserade i Stockholm och har många års erfarenhet inom branschen.</p>
+                <h2>Tjänster</h2>
+                <ul class="list-disc pl-5 text-red-600">
+                    <li>FOH-ljudtekniker</li>
+                    <li>Ljudbearbetning</li>
+                    <li>Uthyrning av ljudutrustning</li>
+                </ul>
+                <h2>Kontakt</h2>
+                <p>
+                    För mer information, vänligen kontakta oss via e-post: <a href="mailto:edmark@norrmalms.se" class="text-red-600 underline">edmark@norrmalms.se</a>
+                </p>
+                <p>
+                    Telefon: <a href="tel:+46 76 796-82 88" class="text-red-600 underline">076 796-82 88</a>
+                </p>
+            </div>
+            <div class="container lg:my-8 overflow-clip text-center shadow">
+                <img width="896" height="364" alt="Norrmalms Ljudteknik - NS10 Studio Monitor" src="/images/ns10.jpg">
+            </div>
+        </div>
+       
+    </body>
+</html>
